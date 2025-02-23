@@ -1,0 +1,403 @@
+body{
+    width: 22rem !important;
+    margin: auto !important;
+    margin-top: 40px !important; /*take off before deploying to chrome as extension*/
+    /* margin: 0 !important; use when deploying to chrome */
+    padding:0 !important;
+}
+::-webkit-scrollbar{
+    display: none !important;
+}
+.header{
+    display: flex !important;
+    gap: 1rem !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0.5rem 1rem !important;
+}
+.header_log img{
+    width: 40px !important;
+    height:40px !important;
+    border-radius: 0.5rem !important;
+}
+#heading{
+    text-align: center !important;
+    margin: 2em !important;
+    color: rgb(0,255,200) !important;
+    font-size:1.2em !important;
+}
+.header_network p{
+    border: 1px solid #00642f !important;
+    color: #00642f !important;
+    font-weight: bold !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.3rem !important;
+    cursor: pointer !important;
+}
+.network{
+    /* display: none !important; */
+    position: absolute !important;
+    background-color: #171717 !important;
+    width: 100% !important;
+    right:0 !important;
+    text-align: center !important;
+}
+.network .addStyle{
+    padding: 1rem 8rem !important;
+    margin-top: 1rem !important;
+}
+.network_title{
+    font-size: 1.3rem !important;
+    border: 1px solid rgb(0,255,200) !important;
+}
+.network_item{
+    padding:0.5rem 4rem !important;
+    font-size: 0.9rem !important;
+    display: grid !important;
+    grid-template-columns: 1fr 3fr !important;
+    cursor:pointer !important;
+    place-content: start !important;
+}
+.home_screen_signup{
+    margin: 0 auto !important;
+    background-color: #171717 !important;
+    text-align: center !important;
+    padding: 2rem !important;
+    /* display: none !important; */
+}
+.home_screen_img{
+    width: 100px !important;
+    height:100px !important;
+}
+.home_title{
+    color: rgb(0,255,200) !important;
+    font-size: 1.2em !important;
+    cursor:pointer !important;
+}
+.import_account .connectWallet,
+.import_token .connectWallet,
+.transfer_form .connectWallet,
+/* .create_popup .connectWallet, */
+.home_screen_login .connectWallet,
+.home_screen_signup .connectWallet{
+    padding: 1rem 6rem !important;
+    margin-top: 1rem !important;
+}
+.home h1, .home_tabs p, .assets_item span, .lists p, .accountData p,
+.home_header p, .home_screen_login p, .home_screen_signup p {
+    background-image: linear-gradient(163deg, #00ff75, #3700ff 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.home_screen_login{
+    margin: 0 auto !important;
+    background-color: #171717 !important;
+    text-align: center !important;
+    padding: 2rem !important;
+    /* display:block !important; */
+}
+.create_popup{
+    margin: 0 auto !important;
+    background-color: #171717 !important;
+    text-align: center !important;
+    padding: 2rem !important;
+    /* display: none !important; */
+    color: rgb(0,255,200) !important;
+    text-align: center !important;
+}
+/* .transfer_form{
+    display: none !important;
+} */
+.form{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+    padding-bottom: 0.4em !important;
+    background-color:#171717 !important;
+}
+.field{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap:0.5em !important;
+    border-radius: 25px !important;
+    padding: 0.6em !important;
+    border: none !important;
+    outline: none !important;
+    color: white !important;
+    background-color: #171717 !important;
+    box-shadow: inset 2px 5px 10px rgb(5,5,5) !important;
+}
+.input-icon{
+    height: 1.3em !important;
+    width: 1.3em !important;
+    fill: rgb(0,255,200) !important;
+}
+.input-field{
+    /* background: none !important; */
+    border: none !important;
+    outline: none !important;
+    /* width: 100% !important; */
+}
+div.input-field div input{
+    color: white !important;
+    font-size: 0.85em;
+}
+form button span{
+    color: white !important;
+    font-size:1rem !important;
+}
+form button span.MuiLoadingButton-label{
+    line-height:0.5 !important;
+    text-transform:lowercase !important;
+    font-size:0.75rem !important;
+    color: rgba(255, 255, 255, 0.598) !important;
+}
+form div div label{
+    color:#fff !important;
+}
+.form .btn{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin-top: 2.5em !important;
+}
+.button1{
+    padding: 0.5em !important;
+    padding-left: 1.1em !important;
+    padding-right: 1.1em !important;
+    border-radius: 5px !important;
+    margin-right: 0.5em !important;
+    border: none !important;
+    outline: none !important;
+    transition: 0.4s ease-in-out !important;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%) !important;
+    color: rgb(0,0,0) !important;
+}
+.button1:hover{
+    background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%) !important;
+    color: rgb(0,255,200) !important;
+}
+.button2{
+    padding: 0.5em !important;
+    padding-left: 2.3em !important;
+    padding-right: 2.3em !important;
+    border-radius: 5px !important;
+    border: none !important;
+    outline: none !important;
+    transition: 0.4s ease-in-out !important;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%) !important;
+    color: rgb(0,0,0) !important;
+}
+.button2:hover{
+    background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%) !important;
+    color: rgb(0,255,200) !important;
+}
+.button3{
+    /* margin-bottom: 3em !important; */
+    padding: 0.5em !important;
+    border-radius: 5px !important;
+    border: none !important;
+    outline: none !important;
+    transition: 0.4s ease-in-out !important;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%) !important;
+    color: rgb(0,0,0) !important;
+}
+.button3:hover{
+    background-image: linear-gradient(163deg, #a00000fa 0%, #d10050 100%) !important;
+    color: rgb(255,255,255) !important;
+}
+.card{
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%) !important;
+    transition: all 0.3s !important;
+}
+.card2{
+    border-radius: 0 !important;
+    transition: all 0.2s !important;
+}
+.card2:hover{
+    transform: scale(0.98) !important;
+    border-radius: 20px !important;
+}
+.card:hover{
+    box-shadow: 0px 0px 30px 1px rgba(0,255,117,0.3) !important;
+}
+small, p{
+    color: #fff !important;
+    text-align: center !important;
+}
+a{
+    text-decoration: none !important;
+    color: rgb(0,255,200) !important;
+    display: none !important;
+}
+textarea{
+    resize: none !important;
+}
+.space{
+    margin-top: 0.3rem !important;
+}
+.center{
+    /* display: none !important; */
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+}
+.loader{
+    position: relative !important;
+    width: 54px !important;
+    height: 54ps !important;
+    border-radius: 10px !important;
+}
+.loader div{
+    width: 8% !important;
+    height: 24% !important;
+    background: rgb(128,128,128) !important;
+    position: absolute !important;
+    left: 50% !important;
+    top:30% !important;
+    opacity: 0 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.2) !important;
+    animation: fade458 1s linear infinite !important;
+}
+
+@keyframes fade458 {
+    from{
+        opacity: 1 !important;
+    }
+    to{
+        opacity: 0.25 !important;
+    }
+}
+.loader .bar1{
+    transform: rotate(0deg) translate(0, -130%) !important;
+    animation-delay: 0s !important;
+}
+.loader .bar2{
+    transform: rotate(360deg) translate(0, -130%) !important;
+    animation-delay:-1.1s !important;
+}
+.loader .bar3{
+    transform: rotate(60deg) translate(0, -130%) !important;
+    animation-delay:-1s !important;
+}
+.loader .bar4{
+    transform: rotate(90deg) translate(0, -130%) !important;
+    animation-delay:-0.9s !important;
+}
+.loader .bar5{
+    transform: rotate(120deg) translate(0, -130%) !important;
+    animation-delay:-0.8s !important;
+}
+.loader .bar6{
+    transform: rotate(150deg) translate(0, -130%) !important;
+    animation-delay:-0.7s !important;
+}
+.loader .bar7{
+    transform: rotate(180deg) translate(0, -130%) !important;
+    animation-delay:-0.6s !important;
+}
+.loader .bar8{
+    transform: rotate(210deg) translate(0, -130%) !important;
+    animation-delay:-0.5s !important;
+}
+.loader .bar9{
+    transform: rotate(240deg) translate(0, -130%) !important;
+    animation-delay:-0.4s !important;
+}
+.loader .bar10{
+    transform: rotate(270deg) translate(0, -130%) !important;
+    animation-delay:-0.3s !important;
+}
+.loader .bar11{
+    transform: rotate(300deg) translate(0, -130%) !important;
+    animation-delay:-0.2s !important;
+}
+.loader .bar12{
+    transform: rotate(330deg) translate(0, -130%) !important;
+    animation-delay:-0.1s !important;
+}
+.home{
+    margin: 0 auto !important;
+    background-color: #171717 !important;
+    text-align: center !important;
+    padding: 1rem 2rem !important;
+    /* display: none !important; */
+}
+.home_header{
+    display: flex !important;
+    justify-content: space-between !important;
+    cursor: pointer !important;
+}
+.home_header_img{
+    margin-top: 1rem !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+.home_features{
+    display: grid !important;
+    grid-template-columns: repeat(4,1fr) !important;
+    gap: 1rem !important;
+}
+.home_features_img{
+    margin-top: 1rem !important;
+    width: 20px !important;
+    height:20px !important;
+}
+.home_features_item > p {
+    line-height: 0 !important;
+    color: #00ff75 !important;
+}
+.home_tabs{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    margin-top: 1rem !important;
+}
+.assets_item{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    align-items: center !important;
+    grid-area: 2rem !important;
+    border-top: 1px solid #00ff75 !important;
+    padding: 1rem 0 !important;
+}
+.assets_item_img{
+    width: 20px !important;
+    height:20px !important;
+    border: 1px solid #00ff75 !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem !important;
+}
+/* .activity{
+    display: none !important;
+} */
+.goBack{
+    width: 50px !important;
+    height: 50px !important;
+    list-style: 0 !important;
+}
+.accountData{
+    word-wrap: break-word !important;
+}
+/* .accountData{
+    display: none !important;
+} */
+/* #goHomePage{
+    display: none !important;
+} */
+/* .import_account{
+    display: none !important;
+} */
+.lists{
+    display: grid !important;
+    grid-template-columns: 0.1fr 5fr !important;
+    border-bottom: 1px solid #00ff75 !important;
+    align-items: center !important;
+}
